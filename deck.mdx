@@ -1,0 +1,56 @@
+import { Image, Box, Heading } from 'rebass'
+import Highlighter from 'react-syntax-highlighter'
+import aircraftImage from './images/aircraft.jpg'
+import smartphoneImage from './images/smartphone.jpg'
+import wallstImage from './images/wallst.jpg'
+import webImage from './images/web.jpg'
+const examples = [
+  webImage,
+  smartphoneImage,
+  wallstImage,
+  aircraftImage
+]
+
+
+
+# Co to open-source?
+## i czemu jest tak potężne? :muscle:
+
+---
+
+<Box sx={{
+  display: 'grid',
+  gridTemplateColumns: 'repeat(4, 1fr)',
+  gridColmnGap: '10px',
+  width: '80%',
+  height: '80%'
+}}>
+  {
+    examples.map(src => (
+      <Image src={src} sx={{
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        objectPosition: 'center'
+      }} />
+    ))
+  }
+</Box>
+
+---
+
+# Jest to droga
+
+---
+
+<Heading fontSize="40vh">90s</Heading>
+
+---
+
+# Dostajesz za darmo i korzystasz
+
+---
+
+<Highlighter language='javascript'>
+{`import React from 'react'`}
+</Highlighter>

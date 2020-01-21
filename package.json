@@ -1,0 +1,23 @@
+{
+  "name": "open-source",
+  "version": "0.0.1",
+  "main": "deck.mdx",
+  "repository": "https://github.com/micorix/open-source-presentation",
+  "author": "micorix",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "devDependencies": {
+    "mdx-deck": "^3.0.13"
+  },
+  "resolutions": {
+    "mdx-deck/gatsby": "2.18.4",
+    "mdx-deck/gatsby-plugin-compile-es6-packages": "2.1.0"
+  },
+  "dependencies": {
+    "react-syntax-highlighter": "^12.2.1",
+    "rebass": "^4.0.7"
+  }
+}
