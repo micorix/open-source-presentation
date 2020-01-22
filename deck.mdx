@@ -1,9 +1,12 @@
 import { Image, Box, Heading } from 'rebass'
+import { Image as BgImage } from 'mdx-deck';
 import Highlighter from 'react-syntax-highlighter'
 import aircraftImage from './images/aircraft.jpg'
 import smartphoneImage from './images/smartphone.jpg'
 import wallstImage from './images/wallst.jpg'
 import webImage from './images/web.jpg'
+import blackHoleImage from './images/blackhole.jpg'
+import twitterIcon from './images/twitter.png'
 const examples = [
   webImage,
   smartphoneImage,
@@ -11,10 +14,8 @@ const examples = [
   aircraftImage
 ]
 
-
-
-# Co to open-source?
-## i czemu jest tak potężne? :muscle:
+# Co to jest open-source?
+## i czemu jest tak potężny? :muscle:
 
 ---
 
@@ -54,3 +55,51 @@ const examples = [
 <Highlighter language='javascript'>
 {`import React from 'react'`}
 </Highlighter>
+
+---
+
+# Współpraca
+
+---
+
+# Co nam to daje?
+
+---
+
+# A jak z biznesem?
+
+---
+
+<BgImage src={blackHoleImage}>
+</BgImage>
+
+---
+
+# Dziękuję za uwagę
+#### Michał Oręziak
+<small style={{
+  marginTop: '-2em',
+  fontSize: '.5em',
+  display: 'flex',
+  alignItems: 'center'
+}}>
+  micorix.com&nbsp;&nbsp;|&nbsp;&nbsp;
+  <Image src={twitterIcon} sx={{
+    width: '1.2em',
+    height: '1.2em',
+    display: 'inline-block'
+  }} />
+  &nbsp;@keenondev
+</small>
+
+Prezentacja dostępna na hkcl.pl/open-source-pres
+
+<small style={{
+  fontSize: '.5em',
+  textAlign: 'center'
+}}>
+github.com/micorix/open-source-presentation
+<br />
+<br />
+Zdjęcia z unsplash.com
+</small>
